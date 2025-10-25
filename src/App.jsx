@@ -258,7 +258,7 @@ const DailyChallenge = () => {
       },
     };
 
-    const apiKey = ""; // API key is handled by the environment
+    const apiKey = "AIzaSyBzDa6V3YA7jKpVcogzSkDOP674hdVp3Yg"; // API key is handled by the environment
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
     try {
@@ -706,7 +706,7 @@ const AddHabitModal = ({ isOpen, onClose, db, userId, appId }) => {
       }
     };
 
-    const apiKey = ""; // API key is handled by the environment
+    const apiKey = "AIzaSyBzDa6V3YA7jKpVcogzSkDOP674hdVp3Yg"; // API key is handled by the environment
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
     try {
@@ -1150,7 +1150,7 @@ const AISuggestions = ({ habits }) => {
       }
     };
 
-    const apiKey = ""; // API key is handled by the environment
+    const apiKey = "AIzaSyBzDa6V3YA7jKpVcogzSkDOP674hdVp3Yg"; // API key is handled by the environment
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
     try {
@@ -1894,7 +1894,7 @@ export default function App() {
       setIsLoading(false);
     }
   }, []); // Empty dependency array ensures this runs only once
-  
+
   // 3. Inject Custom CSS Animations
   useEffect(() => {
     const style = document.createElement('style');
