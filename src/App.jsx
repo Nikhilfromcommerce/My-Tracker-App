@@ -64,19 +64,20 @@ import {
   ArrowLeft // New Icon
 } from 'lucide-react';
 
-// --- (1) FIREBASE CONFIGURATION ---
-
-// ❗ PASTE YOUR FIREBASE KEYS FROM STAGE 1 HERE ❗
+// --- Firebase Configuration ---
+// Keys are read from the .env.local file (for local)
+// and from Vercel Environment Variables (for the live site)
 const firebaseConfig = {
-  apiKey: "AIzaSyAcl_LJnIEz690mljIvt5gLW9wtJKTYHek",
-  authDomain: "mytrackerapp-5b1a2.firebaseapp.com",
-  projectId: "mytrackerapp-5b1a2",
-  storageBucket: "mytrackerapp-5b1a2.firebasestorage.app",
-  messagingSenderId: "641014244679",
-  appId: "1:641014244679:web:1c85b1fcf3037cf7fb9862"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
-// Add this line too, so the app doesn't break
-const appId = firebaseConfig.appId;
+
+// This line (which you already had) is still correct!
+const appId = firebaseConfig.appId || 'default-mindtrack-app';
 
 // --- Icon Map ---
 const ICONS = {
