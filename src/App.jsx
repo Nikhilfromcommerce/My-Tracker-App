@@ -258,7 +258,7 @@ const DailyChallenge = () => {
       },
     };
 
-    const apiKey = "AIzaSyBzDa6V3YA7jKpVcogzSkDOP674hdVp3Yg"; // API key is handled by the environment
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // API key is handled by the environment
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
     try {
@@ -706,7 +706,7 @@ const AddHabitModal = ({ isOpen, onClose, db, userId, appId }) => {
       }
     };
 
-    const apiKey = "AIzaSyBzDa6V3YA7jKpVcogzSkDOP674hdVp3Yg"; // API key is handled by the environment
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // API key is handled by the environment
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
     try {
@@ -1150,7 +1150,7 @@ const AISuggestions = ({ habits }) => {
       }
     };
 
-    const apiKey = "AIzaSyBzDa6V3YA7jKpVcogzSkDOP674hdVp3Yg"; // API key is handled by the environment
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // API key is handled by the environment
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
     try {
